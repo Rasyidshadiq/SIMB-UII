@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ff01;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BerandaAdmController">
+   <top>
+      <Pane prefHeight="67.0" prefWidth="600.0" style="-fx-background-color: #000080;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="TOP" layoutX="42.0" layoutY="14.0" prefHeight="16.0" prefWidth="515.0" text="Sistem Informasi dan Manajemen Beasiswa" textFill="#fffc42">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="202.0" layoutY="36.0" text="Univertas Islam Indonesia" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="333.0" prefWidth="175.0" style="-fx-background-color: #D3D3D3;" BorderPane.alignment="CENTER">
+         <children>
+            <Hyperlink fx:id="tambah" layoutX="27.0" layoutY="76.0" onAction="#handleTambah" text="Tambah Informasi">
+               <effect>
+                  <Blend />
+               </effect>
+            </Hyperlink>
+            <Hyperlink fx:id="seleksi" layoutX="28.0" layoutY="120.0" onAction="#handleSeleksi" text="Seleksi Pendaftar">
+               <effect>
+                  <Blend />
+               </effect>
+            </Hyperlink>
+            <Hyperlink fx:id="umumukan" layoutX="7.0" layoutY="158.0" onAction="#handleUmumkan" text="Umumkan Hasil Seleksi">
+               <effect>
+                  <Blend />
+               </effect>
+            </Hyperlink>
+            <ImageView fitHeight="70.0" fitWidth="56.0" layoutX="14.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Logo%20Universitas%20Islam%20Indonesia.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="-3.0" layoutY="102.0" prefHeight="8.0" prefWidth="178.0" />
+            <Separator layoutY="64.0" prefHeight="7.0" prefWidth="175.0" />
+            <Separator layoutX="1.0" layoutY="149.0" prefHeight="5.0" prefWidth="175.0" />
+            <Separator layoutY="183.0" prefHeight="6.0" prefWidth="175.0" />
+            <Label alignment="CENTER" layoutX="27.0" layoutY="14.0" prefHeight="16.0" prefWidth="127.0" text="Hallo !!!">
+               <font>
+                  <Font name="Garuda Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="269.0" prefHeight="16.0" prefWidth="62.0" text="Universitas">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="279.0" prefHeight="16.0" prefWidth="91.0" text="Islam Indonesia">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <Pane prefHeight="243.0" prefWidth="425.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="17.0" layoutY="28.0" prefHeight="57.0" prefWidth="243.0" text="Selamat Datang di SIM B UII !">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Text layoutX="17.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistem Informasi dan Manajemen Beasiswa Universitas Islam Indonesia merupakan sebuah sistem yang memiliki peran untuk mempermudah mahasiswa dalam mendapatkan beasiswa yang diinginkan dan juga mempermudah pihak kemahasiswaan untuk mengelola pendaftar beasiswa" textAlignment="JUSTIFY" wrappingWidth="391.7294921875">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
